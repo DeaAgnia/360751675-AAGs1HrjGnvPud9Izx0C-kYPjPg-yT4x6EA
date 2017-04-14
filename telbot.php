@@ -5,7 +5,8 @@
      // read incoming info and grab the chatID
      $content = file_get_contents("php://input");
      $update = json_decode($content, true);
-     $chatID = $update["message"]["chat"]["id"];
+     //$chatID = $update["message"]["chat"]["id"];
+     $chatID = "360751675";
 
      // compose reply
      $reply =  sendMessage();
